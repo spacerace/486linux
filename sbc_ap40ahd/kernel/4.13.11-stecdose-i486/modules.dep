@@ -1,0 +1,316 @@
+kernel/arch/x86/kernel/msr.ko:
+kernel/arch/x86/kernel/cpuid.ko:
+kernel/kernel/configs.ko:
+kernel/fs/nls/nls_cp437.ko:
+kernel/fs/nls/nls_cp850.ko:
+kernel/fs/nls/nls_cp852.ko:
+kernel/fs/nls/nls_cp1250.ko:
+kernel/fs/nls/nls_ascii.ko:
+kernel/fs/nls/nls_iso8859-1.ko:
+kernel/fs/nls/nls_iso8859-2.ko:
+kernel/fs/nls/nls_iso8859-15.ko:
+kernel/fs/nls/nls_utf8.ko:
+kernel/fs/mbcache.ko:
+kernel/fs/configfs/configfs.ko:
+kernel/fs/reiserfs/reiserfs.ko:
+kernel/fs/ext4/ext4.ko: kernel/lib/crc16.ko kernel/fs/mbcache.ko kernel/fs/jbd2/jbd2.ko
+kernel/fs/jbd2/jbd2.ko:
+kernel/fs/cramfs/cramfs.ko: kernel/lib/zlib_inflate/zlib_inflate.ko
+kernel/fs/squashfs/squashfs.ko: kernel/lib/lzo/lzo_decompress.ko kernel/lib/xz/xz_dec.ko kernel/lib/lz4/lz4_decompress.ko kernel/lib/zlib_inflate/zlib_inflate.ko
+kernel/fs/minix/minix.ko:
+kernel/fs/bfs/bfs.ko:
+kernel/fs/isofs/isofs.ko: kernel/lib/zlib_inflate/zlib_inflate.ko
+kernel/fs/hfsplus/hfsplus.ko:
+kernel/fs/hfs/hfs.ko:
+kernel/fs/sysv/sysv.ko:
+kernel/fs/cifs/cifs.ko:
+kernel/fs/hpfs/hpfs.ko:
+kernel/fs/ntfs/ntfs.ko:
+kernel/fs/ufs/ufs.ko:
+kernel/fs/jffs2/jffs2.ko: kernel/lib/zlib_deflate/zlib_deflate.ko kernel/drivers/mtd/mtd.ko kernel/lib/zlib_inflate/zlib_inflate.ko
+kernel/fs/affs/affs.ko:
+kernel/fs/romfs/romfs.ko: kernel/drivers/mtd/mtd.ko
+kernel/fs/adfs/adfs.ko:
+kernel/fs/fuse/fuse.ko:
+kernel/fs/udf/udf.ko: kernel/lib/crc-itu-t.ko
+kernel/fs/befs/befs.ko:
+kernel/crypto/seqiv.ko:
+kernel/crypto/rsa_generic.ko: kernel/lib/asn1_decoder.ko kernel/lib/mpi/mpi.ko
+kernel/crypto/cmac.ko:
+kernel/crypto/vmac.ko:
+kernel/crypto/xcbc.ko:
+kernel/crypto/md4.ko:
+kernel/crypto/rmd128.ko:
+kernel/crypto/rmd160.ko:
+kernel/crypto/rmd256.ko:
+kernel/crypto/rmd320.ko:
+kernel/crypto/sha512_generic.ko:
+kernel/crypto/sha3_generic.ko:
+kernel/crypto/wp512.ko:
+kernel/crypto/tgr192.ko:
+kernel/crypto/gf128mul.ko:
+kernel/crypto/ecb.ko:
+kernel/crypto/pcbc.ko:
+kernel/crypto/cts.ko:
+kernel/crypto/lrw.ko: kernel/crypto/gf128mul.ko
+kernel/crypto/xts.ko:
+kernel/crypto/ctr.ko:
+kernel/crypto/ccm.ko:
+kernel/crypto/fcrypt.ko:
+kernel/crypto/blowfish_generic.ko: kernel/crypto/blowfish_common.ko
+kernel/crypto/blowfish_common.ko:
+kernel/crypto/twofish_generic.ko: kernel/crypto/twofish_common.ko
+kernel/crypto/twofish_common.ko:
+kernel/crypto/serpent_generic.ko:
+kernel/crypto/aes_ti.ko:
+kernel/crypto/camellia_generic.ko:
+kernel/crypto/cast_common.ko:
+kernel/crypto/cast5_generic.ko: kernel/crypto/cast_common.ko
+kernel/crypto/cast6_generic.ko: kernel/crypto/cast_common.ko
+kernel/crypto/arc4.ko:
+kernel/crypto/tea.ko:
+kernel/crypto/khazad.ko:
+kernel/crypto/anubis.ko:
+kernel/crypto/seed.ko:
+kernel/crypto/salsa20_generic.ko:
+kernel/crypto/chacha20_generic.ko:
+kernel/crypto/crc32c_generic.ko:
+kernel/crypto/crc32_generic.ko:
+kernel/crypto/xor.ko:
+kernel/crypto/async_tx/async_tx.ko:
+kernel/crypto/async_tx/async_memcpy.ko: kernel/crypto/async_tx/async_tx.ko
+kernel/crypto/async_tx/async_xor.ko: kernel/crypto/xor.ko kernel/crypto/async_tx/async_tx.ko
+kernel/crypto/async_tx/async_pq.ko: kernel/lib/raid6/raid6_pq.ko kernel/crypto/async_tx/async_xor.ko kernel/crypto/xor.ko kernel/crypto/async_tx/async_tx.ko
+kernel/crypto/async_tx/async_raid6_recov.ko: kernel/lib/raid6/raid6_pq.ko kernel/crypto/async_tx/async_tx.ko
+kernel/block/deadline-iosched.ko:
+kernel/block/mq-deadline.ko:
+kernel/block/kyber-iosched.ko:
+kernel/block/bfq.ko:
+kernel/drivers/video/fbdev/vga16fb.ko: kernel/drivers/video/vgastate.ko
+kernel/drivers/video/vgastate.ko:
+kernel/drivers/char/lp.ko: kernel/drivers/parport/parport.ko
+kernel/drivers/char/ppdev.ko: kernel/drivers/parport/parport.ko
+kernel/drivers/base/regmap/regmap-i2c.ko: kernel/drivers/i2c/i2c-core.ko
+kernel/drivers/base/firmware_class.ko:
+kernel/drivers/block/loop.ko:
+kernel/drivers/block/cryptoloop.ko: kernel/drivers/block/loop.ko
+kernel/drivers/ide/ide-cd_mod.ko: kernel/drivers/cdrom/cdrom.ko
+kernel/drivers/net/phy/libphy.ko:
+kernel/drivers/net/phy/bcm7xxx.ko: kernel/drivers/net/phy/bcm-phy-lib.ko kernel/drivers/net/phy/libphy.ko
+kernel/drivers/net/phy/bcm-phy-lib.ko: kernel/drivers/net/phy/libphy.ko
+kernel/drivers/net/phy/fixed_phy.ko: kernel/drivers/net/phy/libphy.ko
+kernel/drivers/net/ethernet/3com/3c509.ko:
+kernel/drivers/net/ethernet/3com/3c515.ko:
+kernel/drivers/net/ethernet/8390/ne.ko: kernel/drivers/net/ethernet/8390/8390p.ko
+kernel/drivers/net/ethernet/8390/8390p.ko:
+kernel/drivers/net/ethernet/8390/smc-ultra.ko: kernel/drivers/net/ethernet/8390/8390.ko
+kernel/drivers/net/ethernet/8390/8390.ko:
+kernel/drivers/net/ethernet/8390/wd.ko: kernel/drivers/net/ethernet/8390/8390.ko
+kernel/drivers/net/ethernet/amd/lance.ko:
+kernel/drivers/net/ethernet/amd/ni65.ko:
+kernel/drivers/net/ethernet/aurora/nb8800.ko: kernel/drivers/net/phy/libphy.ko
+kernel/drivers/net/ethernet/broadcom/b44.ko: kernel/drivers/net/mii.ko kernel/drivers/ssb/ssb.ko kernel/drivers/net/phy/libphy.ko
+kernel/drivers/net/ethernet/broadcom/genet/genet.ko: kernel/drivers/net/phy/fixed_phy.ko kernel/drivers/net/phy/libphy.ko
+kernel/drivers/net/ethernet/cirrus/cs89x0.ko:
+kernel/drivers/net/ethernet/hp/hp100.ko:
+kernel/drivers/net/ethernet/realtek/atp.ko:
+kernel/drivers/net/ethernet/smsc/smc9194.ko:
+kernel/drivers/net/ethernet/smsc/smsc911x.ko: kernel/drivers/net/phy/libphy.ko
+kernel/drivers/net/dummy.ko:
+kernel/drivers/net/mii.ko:
+kernel/drivers/net/tun.ko:
+kernel/drivers/net/plip/plip.ko: kernel/drivers/parport/parport.ko
+kernel/drivers/net/ppp/ppp_generic.ko: kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/ppp_async.ko: kernel/lib/crc-ccitt.ko kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/ppp_synctty.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/pppox.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/ppp/pppoe.ko: kernel/drivers/net/ppp/pppox.ko kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/drivers/net/slip/slip.ko:
+kernel/drivers/net/slip/slhc.ko:
+kernel/drivers/cdrom/cdrom.ko:
+kernel/drivers/auxdisplay/charlcd.ko:
+kernel/drivers/auxdisplay/panel.ko: kernel/drivers/auxdisplay/charlcd.ko kernel/drivers/parport/parport.ko
+kernel/drivers/input/serio/parkbd.ko: kernel/drivers/parport/parport.ko
+kernel/drivers/input/serio/serport.ko:
+kernel/drivers/input/keyboard/xtkbd.ko:
+kernel/drivers/input/mouse/inport.ko:
+kernel/drivers/input/mouse/logibm.ko:
+kernel/drivers/input/mouse/pc110pad.ko:
+kernel/drivers/input/mouse/psmouse.ko: kernel/drivers/i2c/i2c-core.ko
+kernel/drivers/input/mouse/sermouse.ko:
+kernel/drivers/input/mouse/vsxxxaa.ko:
+kernel/drivers/input/joystick/analog.ko: kernel/drivers/input/gameport/gameport.ko
+kernel/drivers/input/joystick/joydump.ko: kernel/drivers/input/gameport/gameport.ko
+kernel/drivers/input/mousedev.ko:
+kernel/drivers/input/joydev.ko:
+kernel/drivers/rtc/rtc-cmos.ko:
+kernel/drivers/i2c/algos/i2c-algo-bit.ko: kernel/drivers/i2c/i2c-core.ko
+kernel/drivers/i2c/algos/i2c-algo-pcf.ko: kernel/drivers/i2c/i2c-core.ko
+kernel/drivers/i2c/algos/i2c-algo-pca.ko: kernel/drivers/i2c/i2c-core.ko
+kernel/drivers/i2c/busses/i2c-parport.ko: kernel/drivers/i2c/algos/i2c-algo-bit.ko kernel/drivers/i2c/i2c-smbus.ko kernel/drivers/i2c/i2c-core.ko kernel/drivers/parport/parport.ko
+kernel/drivers/i2c/busses/i2c-parport-light.ko: kernel/drivers/i2c/algos/i2c-algo-bit.ko kernel/drivers/i2c/i2c-smbus.ko kernel/drivers/i2c/i2c-core.ko
+kernel/drivers/i2c/busses/i2c-elektor.ko: kernel/drivers/i2c/algos/i2c-algo-pcf.ko kernel/drivers/i2c/i2c-core.ko
+kernel/drivers/i2c/busses/i2c-pca-isa.ko: kernel/drivers/i2c/algos/i2c-algo-pca.ko kernel/drivers/i2c/i2c-core.ko
+kernel/drivers/i2c/i2c-core.ko:
+kernel/drivers/i2c/i2c-smbus.ko: kernel/drivers/i2c/i2c-core.ko
+kernel/drivers/i2c/i2c-dev.ko: kernel/drivers/i2c/i2c-core.ko
+kernel/drivers/watchdog/pcwd.ko:
+kernel/drivers/watchdog/mixcomwd.ko:
+kernel/drivers/watchdog/wdt.ko:
+kernel/drivers/watchdog/smsc37b787_wdt.ko:
+kernel/drivers/watchdog/w83627hf_wdt.ko:
+kernel/drivers/watchdog/w83877f_wdt.ko:
+kernel/drivers/watchdog/w83977f_wdt.ko:
+kernel/drivers/md/linear.ko: kernel/drivers/md/md-mod.ko
+kernel/drivers/md/raid0.ko: kernel/drivers/md/md-mod.ko
+kernel/drivers/md/raid1.ko: kernel/drivers/md/md-mod.ko
+kernel/drivers/md/raid10.ko: kernel/drivers/md/md-mod.ko
+kernel/drivers/md/raid456.ko: kernel/lib/libcrc32c.ko kernel/crypto/async_tx/async_raid6_recov.ko kernel/crypto/async_tx/async_memcpy.ko kernel/crypto/async_tx/async_pq.ko kernel/lib/raid6/raid6_pq.ko kernel/crypto/async_tx/async_xor.ko kernel/crypto/xor.ko kernel/crypto/async_tx/async_tx.ko kernel/drivers/md/md-mod.ko
+kernel/drivers/md/md-mod.ko:
+kernel/drivers/md/dm-mod.ko: kernel/drivers/dax/dax.ko
+kernel/drivers/md/dm-crypt.ko: kernel/drivers/md/dm-mod.ko kernel/drivers/dax/dax.ko
+kernel/drivers/md/dm-mirror.ko: kernel/drivers/md/dm-region-hash.ko kernel/drivers/md/dm-log.ko kernel/drivers/md/dm-mod.ko kernel/drivers/dax/dax.ko
+kernel/drivers/md/dm-log.ko: kernel/drivers/md/dm-mod.ko kernel/drivers/dax/dax.ko
+kernel/drivers/md/dm-region-hash.ko: kernel/drivers/md/dm-log.ko kernel/drivers/md/dm-mod.ko kernel/drivers/dax/dax.ko
+kernel/drivers/md/dm-zero.ko: kernel/drivers/md/dm-mod.ko kernel/drivers/dax/dax.ko
+kernel/drivers/md/dm-raid.ko: kernel/drivers/md/raid456.ko kernel/lib/libcrc32c.ko kernel/crypto/async_tx/async_raid6_recov.ko kernel/crypto/async_tx/async_memcpy.ko kernel/crypto/async_tx/async_pq.ko kernel/lib/raid6/raid6_pq.ko kernel/crypto/async_tx/async_xor.ko kernel/crypto/xor.ko kernel/crypto/async_tx/async_tx.ko kernel/drivers/md/dm-mod.ko kernel/drivers/dax/dax.ko kernel/drivers/md/md-mod.ko
+kernel/drivers/firmware/dmi-sysfs.ko:
+kernel/drivers/parport/parport.ko:
+kernel/drivers/parport/parport_pc.ko: kernel/drivers/parport/parport.ko
+kernel/drivers/dax/dax.ko:
+kernel/drivers/scsi/scsi_mod.ko:
+kernel/drivers/scsi/scsi_transport_spi.ko: kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/scsi/advansys.ko: kernel/drivers/base/firmware_class.ko kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/scsi/BusLogic.ko: kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/scsi/aha152x.ko: kernel/drivers/scsi/scsi_transport_spi.ko kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/scsi/aha1542.ko: kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/scsi/fdomain.ko: kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/scsi/g_NCR5380.ko: kernel/drivers/scsi/scsi_transport_spi.ko kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/scsi/NCR53c406a.ko: kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/scsi/sym53c416.ko: kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/scsi/qlogicfas408.ko: kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/scsi/qlogicfas.ko: kernel/drivers/scsi/qlogicfas408.ko kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/scsi/eata.ko: kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/scsi/gdth.ko: kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/scsi/ppa.ko: kernel/drivers/scsi/scsi_mod.ko kernel/drivers/parport/parport.ko
+kernel/drivers/scsi/imm.ko: kernel/drivers/scsi/scsi_mod.ko kernel/drivers/parport/parport.ko
+kernel/drivers/scsi/st.ko: kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/scsi/osst.ko: kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/scsi/sd_mod.ko: kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/scsi/sr_mod.ko: kernel/drivers/scsi/scsi_mod.ko kernel/drivers/cdrom/cdrom.ko
+kernel/drivers/scsi/sg.ko: kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/scsi/ch.ko: kernel/drivers/scsi/scsi_mod.ko
+kernel/drivers/mtd/chips/chipreg.ko:
+kernel/drivers/mtd/nand/nand.ko: kernel/drivers/mtd/nand/nand_ecc.ko kernel/drivers/mtd/mtd.ko
+kernel/drivers/mtd/nand/nand_ecc.ko:
+kernel/drivers/mtd/nand/diskonchip.ko: kernel/drivers/mtd/nand/nand.ko kernel/drivers/mtd/nand/nand_ecc.ko kernel/lib/reed_solomon/reed_solomon.ko kernel/drivers/mtd/mtd.ko
+kernel/drivers/mtd/mtd.ko:
+kernel/drivers/block/paride/paride.ko: kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/aten.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/bpck.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/comm.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/dstr.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/kbic.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/epat.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/epia.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/frpw.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/friq.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/fit2.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/fit3.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/on20.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/on26.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/ktti.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/bpck6.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/pd.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/pcd.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/cdrom/cdrom.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/pf.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/pt.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/block/paride/pg.ko: kernel/drivers/block/paride/paride.ko kernel/drivers/parport/parport.ko
+kernel/drivers/input/gameport/gameport.ko:
+kernel/drivers/input/gameport/ns558.ko: kernel/drivers/input/gameport/gameport.ko
+kernel/drivers/hwmon/hwmon.ko:
+kernel/drivers/hwmon/lm75.ko: kernel/drivers/hwmon/hwmon.ko kernel/drivers/base/regmap/regmap-i2c.ko kernel/drivers/i2c/i2c-core.ko
+kernel/drivers/ssb/ssb.ko:
+kernel/sound/soundcore.ko:
+kernel/sound/core/oss/snd-mixer-oss.ko: kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/core/oss/snd-pcm-oss.ko: kernel/sound/core/oss/snd-mixer-oss.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/core/snd.ko: kernel/sound/soundcore.ko
+kernel/sound/core/snd-hwdep.ko: kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/core/snd-timer.ko: kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/core/snd-pcm.ko: kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/core/snd-rawmidi.ko: kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/i2c/snd-tea6330t.ko: kernel/sound/i2c/snd-i2c.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/i2c/snd-i2c.ko: kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/drivers/snd-serial-u16550.ko: kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/drivers/snd-mtpav.ko: kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/drivers/snd-mts64.ko: kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko kernel/drivers/parport/parport.ko
+kernel/sound/drivers/snd-portman2x4.ko: kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko kernel/drivers/parport/parport.ko
+kernel/sound/drivers/opl3/snd-opl3-lib.ko: kernel/sound/core/snd-hwdep.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/drivers/opl4/snd-opl4-lib.ko: kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/drivers/mpu401/snd-mpu401-uart.ko: kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/drivers/mpu401/snd-mpu401.ko: kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/snd-adlib.ko: kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/snd-als100.ko: kernel/sound/isa/sb/snd-sb16-dsp.ko kernel/sound/isa/sb/snd-sb-common.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/snd-azt2320.ko: kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/snd-cmi8328.ko: kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko kernel/drivers/input/gameport/gameport.ko
+kernel/sound/isa/snd-cmi8330.ko: kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/isa/sb/snd-sb16-dsp.ko kernel/sound/isa/sb/snd-sb-common.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/snd-es18xx.ko: kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/snd-opl3sa2.ko: kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/snd-sc6000.ko: kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/snd-sscape.ko: kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko kernel/drivers/base/firmware_class.ko
+kernel/sound/isa/ad1816a/snd-ad1816a.ko: kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/ad1848/snd-ad1848.ko: kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/cs423x/snd-cs4231.ko: kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/cs423x/snd-cs4236.ko: kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/es1688/snd-es1688.ko: kernel/sound/isa/es1688/snd-es1688-lib.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/es1688/snd-es1688-lib.ko: kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/galaxy/snd-azt1605.ko: kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/galaxy/snd-azt2316.ko: kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/gus/snd-gusclassic.ko: kernel/sound/isa/gus/snd-gus-lib.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/gus/snd-gus-lib.ko: kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/gus/snd-gusmax.ko: kernel/sound/isa/gus/snd-gus-lib.ko kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/gus/snd-gusextreme.ko: kernel/sound/isa/gus/snd-gus-lib.ko kernel/sound/isa/es1688/snd-es1688-lib.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/gus/snd-interwave.ko: kernel/sound/isa/gus/snd-gus-lib.ko kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/gus/snd-interwave-stb.ko: kernel/sound/i2c/snd-tea6330t.ko kernel/sound/i2c/snd-i2c.ko kernel/sound/isa/gus/snd-gus-lib.ko kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/msnd/snd-msnd-pinnacle.ko: kernel/sound/isa/msnd/snd-msnd-lib.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko kernel/drivers/base/firmware_class.ko
+kernel/sound/isa/msnd/snd-msnd-lib.ko: kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/msnd/snd-msnd-classic.ko: kernel/sound/isa/msnd/snd-msnd-lib.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko kernel/drivers/base/firmware_class.ko
+kernel/sound/isa/opti9xx/snd-opti92x-ad1848.ko: kernel/sound/drivers/opl4/snd-opl4-lib.ko kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/opti9xx/snd-opti92x-cs4231.ko: kernel/sound/drivers/opl4/snd-opl4-lib.ko kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/opti9xx/snd-opti93x.ko: kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/opti9xx/snd-miro.ko: kernel/sound/drivers/opl4/snd-opl4-lib.ko kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/sb/snd-sb-common.ko: kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/sb/snd-sb16-dsp.ko: kernel/sound/isa/sb/snd-sb-common.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/sb/snd-sb8-dsp.ko: kernel/sound/isa/sb/snd-sb-common.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/sb/snd-sb8.ko: kernel/sound/isa/sb/snd-sb8-dsp.ko kernel/sound/isa/sb/snd-sb-common.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/sb/snd-sb16.ko: kernel/sound/isa/sb/snd-sb16-csp.ko kernel/sound/isa/sb/snd-sb16-dsp.ko kernel/sound/isa/sb/snd-sb-common.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko kernel/drivers/base/firmware_class.ko
+kernel/sound/isa/sb/snd-sbawe.ko: kernel/sound/isa/sb/snd-sb16-csp.ko kernel/sound/isa/sb/snd-sb16-dsp.ko kernel/sound/isa/sb/snd-sb-common.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko kernel/drivers/base/firmware_class.ko
+kernel/sound/isa/sb/snd-jazz16.ko: kernel/sound/isa/sb/snd-sb8-dsp.ko kernel/sound/isa/sb/snd-sb-common.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/sound/isa/sb/snd-sb16-csp.ko: kernel/sound/isa/sb/snd-sb-common.ko kernel/sound/core/snd-hwdep.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko kernel/drivers/base/firmware_class.ko
+kernel/sound/isa/wavefront/snd-wavefront.ko: kernel/sound/isa/wss/snd-wss-lib.ko kernel/sound/drivers/opl3/snd-opl3-lib.ko kernel/sound/core/snd-hwdep.ko kernel/sound/drivers/mpu401/snd-mpu401-uart.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko kernel/drivers/base/firmware_class.ko
+kernel/sound/isa/wss/snd-wss-lib.ko: kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/sound/soundcore.ko
+kernel/net/ipv4/ip_tunnel.ko:
+kernel/net/ipv4/tunnel4.ko:
+kernel/net/ipv6/ipv6.ko:
+kernel/net/ipv6/ah6.ko: kernel/net/ipv6/ipv6.ko
+kernel/net/ipv6/esp6.ko: kernel/net/ipv6/ipv6.ko
+kernel/net/ipv6/tunnel6.ko:
+kernel/net/ipv6/xfrm6_mode_transport.ko:
+kernel/net/ipv6/xfrm6_mode_tunnel.ko: kernel/net/ipv6/ipv6.ko
+kernel/net/ipv6/xfrm6_mode_beet.ko: kernel/net/ipv6/ipv6.ko
+kernel/net/ipv6/sit.ko: kernel/net/ipv4/tunnel4.ko kernel/net/ipv4/ip_tunnel.ko kernel/net/ipv6/ipv6.ko
+kernel/net/ipv6/ip6_tunnel.ko: kernel/net/ipv6/tunnel6.ko kernel/net/ipv6/ipv6.ko
+kernel/lib/test_module.ko:
+kernel/lib/crc-ccitt.ko:
+kernel/lib/crc16.ko:
+kernel/lib/crc-itu-t.ko:
+kernel/lib/libcrc32c.ko:
+kernel/lib/zlib_inflate/zlib_inflate.ko:
+kernel/lib/zlib_deflate/zlib_deflate.ko:
+kernel/lib/reed_solomon/reed_solomon.ko:
+kernel/lib/lzo/lzo_decompress.ko:
+kernel/lib/lz4/lz4_decompress.ko:
+kernel/lib/xz/xz_dec.ko:
+kernel/lib/raid6/raid6_pq.ko:
+kernel/lib/mpi/mpi.ko:
+kernel/lib/asn1_decoder.ko:
