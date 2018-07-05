@@ -32,12 +32,16 @@ Das Image hat drei Paritionen, einen Bootloader, DOS und die Linuxdistribution i
 
 
 ## Kernel
-Es gibt zur Zeit zwei Kernel: 
+Es gibt zur Zeit drei Kernel: 
 * Standard-Kernel (4.13.11-stecdose-i486), ISA only
 * PCI-Kernel (4.13.11-stecdose-pci-i486), PCI, USB, PCI-Grafik, Netzwerk, ...
+* ap40-pci-Kernel (4.13.11-stecdose-ap40-pci-i486) für AP40AHD, hat ALI M1489 onboard (PCI), aber extern nur ISA
 
 Der Standard-Kernel ist für ISA-only Systeme gedacht, oder wenn z.B. eine 
 PCI-VGA-Karte im VGA-only Modus betrieben wird und keine PCI-LAN-Karte gebraucht wird. 
  
 Der PCI-Kernel ist nötig sobald irgend ein PCI-Gerät, USB oder ähnliches gebraucht wird. 
 AGP-Support ist auch mit drin, Framebuffer, ...
+
+Der ap40-pci-Kernel ist für den AP40-AHD SBC. Der hat einen ALI M1487/1489 chipsatz (PCI). Extern ist
+aber nur 16bit ISA verfügbar.
