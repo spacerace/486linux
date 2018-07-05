@@ -1,0 +1,23 @@
+#!/bin/sh -e
+
+# if chroot.
+if [ "$1" = "-r" -a "$2" != "" ]; then
+  if [ -c /dev/.devfsd ]; then
+    mount none $2/dev -t devfs
+  fi
+
+# use "$@" instead of $* so you can do `lilo -C "/etc/spare lilo config"`
+  $0.real "$@"
+  if [ -c /dev/.devfsd ]; then
+    umount $2/dev
+  fi
+
+else
+
+# use "$@" instead of $* so you can do `lilo -C "/etc/spare lilo config"`
+  $0.real "$@"
+  if [ "$1" != "-t" ]; then
+    rm -f /boot/boot.b.preserved* /boot/boot-text.b.preserved* /boot/boot-menu.b.preserved* /boot/chain.b.preserved* /boot/os2_d.b.preserved* /boot/boot-bmp.b.preserved
+  fi
+
+fi
