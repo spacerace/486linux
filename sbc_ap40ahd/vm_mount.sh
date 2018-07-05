@@ -18,3 +18,6 @@ sudo mount /dev/nbd0p2 $MOUNT_BOOT
 sudo mount /dev/nbd0p5 $MOUNT_LINUX
 
 df -h $MOUNT_DOS $MOUNT_LINUX $MOUNT_BOOT
+
+echo "press a key to continue..."
+read
